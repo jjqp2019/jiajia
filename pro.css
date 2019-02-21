@@ -1,0 +1,211 @@
+/**
+ * 推广页 
+ * @author zh
+ */
+
+@CHARSET "UTF-8";
+
+/* 公共样式*/
+*{margin:0;padding:0;list-style: outside none none;}
+body{
+    background:#edf2f4;
+    height:100%;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+a:link,a:hover,a:active,a:visited{text-decoration:none;}
+
+/* Main*/
+.wrapper{
+    width:100%;
+}
+.pro-header{
+    background:url(../img/bg.jpg) 0 0 no-repeat;
+    height:225px;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    position: relative;
+}
+.pro-header-content{
+    position:relative;
+    padding-top:20px;
+}
+.app-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto;
+    position: relative;
+}
+.app-icon::before{
+    position: absolute;
+    left: -14px;
+    bottom: -6px;
+    content: "";
+    height: 11px;
+    width: 107px;
+    background:url(../img/shadow.png) no-repeat scroll 0 0;
+    background-size:cover;
+}
+.app-icon img{
+    width: 100%;
+}
+.app-title{
+    margin: 8px 0 6px;
+    line-height: 21px;
+    font-size: 18px;
+    text-align: center;
+    color: #3a3a3a;
+}
+.title-box{
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+    max-width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.title-tag{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    line-height: 12px;
+    padding: 1px 2px 0;
+    border: 1px solid rgba(253,195,195,0.8);
+    font-size: 10px;
+    font-style: normal;
+    color: #da7272;
+    background-color: rgba(241,105,105,0.1);
+}
+.app-explain{
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    color: #939393;
+}
+.app-explain span{
+    margin-left: 10px;
+}
+.app-btns{
+    margin-top: 13px;
+    text-align: center;
+}
+.d-btn{
+    display: block;
+    height: 28px;
+    line-height: 30px;
+    width: 188px;
+    border: 1px solid #81d5ff;
+    font-size: 14px;
+    text-align: center;
+    background-color: #00a3ef;
+    color: #fff;
+    margin:0 auto;
+    letter-spacing:3px;
+}
+.pro-main{
+    width: 100%;
+    overflow: hidden;
+    margin-top:10px;
+    position: relative;
+}
+.pro-content{
+    position: relative;
+    margin: 0 12px 8px;
+    background-color: #fff;
+    padding: 12px;
+}
+.app-info-panel{
+    position: relative;
+    overflow:hidden;
+}
+.pic-list{
+    margin: 10px 0 12px;
+}
+.pic-list li{
+    width:150px;
+    height:240px;
+    margin-left:14px;
+    display: inline-block;
+}
+.mod-scroll-bar{
+    position: absolute;
+    bottom: 1px;
+    left: 12px;
+    right: 12px;
+    height: 2px;
+    margin-top:5px;
+}
+.app-desc{
+    position: relative;
+    padding: 6px 0 18px;
+}
+.app-desc p{
+    line-height: 1.5;
+    font-size: 14px;
+    color: #343434;
+}
+.more-btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -5px;
+    right: 0;
+}
+.down-arrow::after{
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 13px;
+    background: url(../images/show_more.png) no-repeat scroll 0 0;
+    background-size: cover;
+}
+.down-arrow-y::after{
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
+.app-version{
+    color: #939393;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.tips{
+    margin: 10px 0 2px;
+}
+.tips span{
+    position: relative;
+    padding-left: 19px;
+    display: inline-block;
+    margin-right: 25px;
+}
+.tips-virus::before{
+    background: url(../img/tip1.png) no-repeat scroll 0 0;
+    background-size: cover;
+}
+.tips-adver::before{
+    background: url(../img/tip2.png) no-repeat scroll 0 0;
+    background-size: cover;
+}
+.tips-userSafe::before{
+    background: url(../img/tip3.png) no-repeat scroll 0 0;
+    background-size: cover;
+}
+.tips span::before{
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 14px;
+    top: 2px;
+    left: 0;
+}
+@media screen and (max-width:860px){
+    .app-info-panel .pic-list{
+        width:820px;
+        height:240px;
+    }
+} 
