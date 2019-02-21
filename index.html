@@ -19,9 +19,7 @@
             /*修复没有appstore时频繁尝试的BUG*/
             if (istoappstore) {
                 window.setTimeout(function () {
-                   //window.location = "itms-services://?action=download-manifest&url=https://doapps.oss-cn-hangzhou.aliyuncs.com/haha/haha-0810.plist"
-                   //window.location = "itms-services://?action=download-manifest&url=https://jiajiaqipai.oss-cn-beijing.aliyuncs.com/jiajia/haha-0810.plist"
-                   window.location = "itms-services://?action=download-manifest&url=https://jiajiaqipai.oss-cn-beijing.aliyuncs.com/jiajia/jiajia.plist"
+                   window.location = "itms-services://?action=download-manifest&url=https://jjqp-oss-bucket1.oss-cn-qingdao.aliyuncs.com/down/jiajia.plist"
                 }, 500);
             }
         } else if (navigator.userAgent.match(/android/i)) {
@@ -124,7 +122,7 @@
                     url = "http://47.105.132.160:8966/jjqp.apk?t=" + new Date().getTime()
                     window.location.href = url;
                 }else if(os == 2){//ios
-                     window.location.href = "itms-services://?action=download-manifest&url=https://jiajiaqipai.oss-cn-beijing.aliyuncs.com/jiajia/jiajia.plist"
+                     window.location.href = "itms-services://?action=download-manifest&url=https://jjqp-oss-bucket1.oss-cn-qingdao.aliyuncs.com/down/jiajia.plist"
                 }else {//pc
                     url = "http://47.105.132.160:8966/jjqp.apk?t=" + new Date().getTime()
                     window.location.href = url;
